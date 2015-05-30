@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -29,6 +30,13 @@ public class MainActivity extends ActionBarActivity {
                     dragView.show();
                     isShow = true;
                 }
+            }
+        });
+        Button bt2 = (Button)findViewById(R.id.button);
+        bt2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "bt click", Toast.LENGTH_SHORT).show();
             }
         });
         dragView.setHeader(R.id.header);
