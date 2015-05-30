@@ -6,7 +6,7 @@ A DragView similar to the one in Google Map used to display place details.
 Usage
 ===============================
 
-1. Add a view(only one) that you want to drag from the bottom in this widget in layout XML:
+Add a view(only one) that you want to drag from the bottom in this widget in layout XML:
 
 ```java
     <com.example.cpy.draghelpertest.MyDragView
@@ -44,20 +44,20 @@ Usage
 ````
 
 
-2. Add header through {@link #setHeader(int)} or {@link #setHeader(View)} which will be display after calling {@link #show()}:
+Add header through setHeader(int) or setHeader(View) which will be display after calling {@link #show()}:
 
 ```java
     dragView.setHeader(R.id.header);
 ````
 
-3. Set the middle height of the view through {@link #setMiddleDisHeight(int)}:
+Set the middle height of the view through {@link #setMiddleDisHeight(int)}:
 
 ```java
     final int middleHeight = getResources().getDisplayMetrics().heightPixels / 2;
         dragView.setMiddleDisHeight(middleHeight);
 ````
 
-4. Call {@link #setOnPositionChangedListener(OnPositionChangedListener)} and {@link #setOnStopLevelChangedListener(OnStopLevelChangedListener)} to customize the action of your view:
+Call setOnPositionChangedListener(OnPositionChangedListener) and setOnStopLevelChangedListener(OnStopLevelChangedListener) to customize the action of your view:
 
 ```java
     dragView.setOnPositionChangedListener(new MyDragView.OnPositionChangedListener() {
