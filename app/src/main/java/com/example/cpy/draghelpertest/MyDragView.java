@@ -22,7 +22,7 @@ import android.widget.LinearLayout;
  * <br/>
  * Usage:<br/>
  * 1. Add a view(only one) that you want to drag from the bottom in this widget in layout XML<br/>
- * 2. Add header throught {@link #setHeader(int)} or {@link #setHeader(View)} which will be display
+ * 2. Add header through {@link #setHeader(int)} or {@link #setHeader(View)} which will be display
  * after calling {@link #show()}<br/>
  * 3. Set the middle height of the view through {@link #setMiddleDisHeight(int)}<br/>
  * 4. Call {@link #setOnPositionChangedListener(OnPositionChangedListener)}
